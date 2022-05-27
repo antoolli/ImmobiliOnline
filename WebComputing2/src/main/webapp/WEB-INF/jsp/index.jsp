@@ -25,7 +25,7 @@
       			<div class="container-fluid">
       				<li class="nav-item dropdown">
         				<a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
-          				<img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle" height="50" alt="Avatar"  />
+          				<img src="img/avatar.jpg" class="rounded-circle" height="50" alt="Avatar"  />
       					  </a>
         				<ul class="dropdown-menu bg-dark">
          					 <li> <a class="dropdown-item bg-dark text-white" href="pageProfiles">My profile</a></li>

@@ -30,7 +30,7 @@
       			<!-- Avatar -->
       				<li class="nav-item dropdown">
         				<a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
-          				<img src="img/profilo.png" class="rounded-circle" height="50" alt="Avatar"  />
+          				<img src="img/avatar.jpg" class="rounded-circle" height="50" alt="Avatar"  />
       					  </a>
         				<ul class="dropdown-menu">
          					 <li> <a class="dropdown-item" href="pageProfiles">My profile</a></li>

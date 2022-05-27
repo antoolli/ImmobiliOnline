@@ -24,7 +24,7 @@
       			<!-- Avatar -->
       				<li class="nav-item dropdown">
         				<a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
-          				<img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle" height="50" alt="Avatar"  />
+          				<img src="img/avatar.jpg" class="rounded-circle" height="50" alt="Avatar"  />
       					  </a>
         				<ul class="dropdown-menu">
          					 <li> <a class="dropdown-item" href="pageProfiles">My profile</a></li>
@@ -73,7 +73,7 @@
           <div class="card-body p-4">
             <div class="d-flex text-black">
               <div class="flex-shrink-0">
-                <img src="img/profilo.png"
+                <img src="img/avatar.jpg"
                   alt="Generic placeholder image" class="img-fluid"
                   style="width: 180px; border-radius: 10px;" />
               </div>
