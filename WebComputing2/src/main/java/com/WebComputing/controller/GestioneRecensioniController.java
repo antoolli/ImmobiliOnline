@@ -58,9 +58,10 @@ public class GestioneRecensioniController {
 		
 		if (req.getSession().getAttribute("username")!= null) {
 			String us= (String) req.getSession().getAttribute("username");
-			Iscritti i= new Iscritti();
-			i=Database.getInstance().getIscrittiDao().findByUsernameiS(us);
-				if(i.getPermessi().equals("Admin") || i.getPermessi().equals("A")) {
+			Iscritti logger= new Iscritti();
+			logger=Database.getInstance().getIscrittiDao().findByUsernameiS(us);
+			
+				if(logger.getPermessi().equals("Admin") || logger.getPermessi().equals("A")) {
 						String s =  req.getParameter("visualizzaRecensione");
 						int id = Integer.parseInt(s);
 						annunciInVendita annuncio= Database.getInstance().getVenditaDao().findById(id);
@@ -68,7 +69,7 @@ public class GestioneRecensioniController {
 						req.setAttribute("recensioni", recensioni);
 						req.setAttribute("annuncio", annuncio);
 						return "reviews";
-				}
+				}else return "soloTabRew";
 		}
 		return "notAutorizhed";
 	}

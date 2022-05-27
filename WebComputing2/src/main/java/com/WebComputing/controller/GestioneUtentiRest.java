@@ -29,6 +29,8 @@ public class GestioneUtentiRest {
 		Database.getInstance().getAffittiDao().deleteByVenditore(username);
 		Database.getInstance().getVenditaDao().deleteByVenditore(username);
 		
+	
+		
 		return "ok";
 	}
 	
