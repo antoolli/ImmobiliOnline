@@ -87,9 +87,10 @@
 						<button class="accordion-button collapsed" type="button"
 							data-bs-toggle="collapse" data-bs-target="#collapseOne"
 							aria-expanded="false" aria-controls="${recensione.getCodiceId()}">
-							<strong>Valutazione di: </strong> ${recensione.getValutazione()}
-							stelle <strong> al Venditore:</strong>
-							${recensione.getVenditore()}
+							<strong>Valutazione di: &nbsp </strong> 
+								<div class="text-warning">${recensione.getValutazione()} stelle </div>
+							<strong>&nbsp al Venditore: &nbsp </strong>
+							<div class="text-primary">${recensione.getVenditore()}</div>
 						</button>
 					</h2>
 					<div id="collapseOne" class="accordion-collapse collapse show"
@@ -109,7 +110,7 @@
 
 
 
-		<h1>Scrivi la tua recensione sull'immobile:</h1>
+		<h1 >Scrivi la tua recensione sull'immobile:</h1>
 		<form>
 			<label for="customRange2" class="form-label">Dai un voto da 0 a 5</label> 
 			<input type="range" class="form-range" min="0" max="5" id="range">
