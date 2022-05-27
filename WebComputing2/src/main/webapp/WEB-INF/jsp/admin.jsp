@@ -37,6 +37,59 @@
 
 <body>
 	
+		
+	<!-- Carousel -->
+	<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+		<!-- Indicators/dots -->
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#demo" data-bs-slide-to="0"
+				class="active"></button>
+			<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+			<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+		</div>
+
+		<!-- The slideshow/carousel -->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/c2.png"
+					class="img-fluid img-thumbnail rounded mx-auto d-block">
+				<div class="carousel-caption">
+					<h3>Benvenuto admin</h3>
+					<p>In questo menu trovi tutte le funzionalita admin</p>
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<img src="img/carosel1.jpg"
+					class="img-fluid img-thumbnail rounded mx-auto d-block">
+				<div class="carousel-caption">
+					<h3>Possibilita di cancellare dati</h3>
+					<p>Puoi eliminare annunci , iscrizione e tanto altro</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="img/c3.jpg"
+					class="img-fluid img-thumbnail rounded mx-auto d-block">
+				<div class="carousel-caption">
+					<h3>Funzionalità di monitoraggio</h3>
+					<p>Puoi monitorare tutti gli annunci le iscrizioni e le recensioni che avvengono sul tuo sito</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Left and right controls/icons -->
+		<button class="carousel-control-prev" type="button"
+			data-bs-target="#demo" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</button>
+		<button class="carousel-control-next" type="button"
+			data-bs-target="#demo" data-bs-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</button>
+	</div>
+	
+	
 
 
 	<footer>

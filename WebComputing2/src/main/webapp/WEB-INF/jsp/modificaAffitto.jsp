@@ -95,7 +95,14 @@
 
 					<td>${annuncio.getId()}</td>
 					<td>${annuncio.getTitolo()}</td>
-					<td>${annuncio.getDescrizione()}</td>
+					<td><details>
+   							 <summary>
+     						<strong>Clicca per vedere la descrizione:</strong> 
+  							  </summary>
+   						 <p> ${annuncio.getDescrizione()}</p>
+ 						 </details>
+					
+					</td>
 					<td>${annuncio.getContratto()}</td>
 					<td>${annuncio.getPrezzo()}</td>
 					<td>${annuncio.getMetri()}</td>

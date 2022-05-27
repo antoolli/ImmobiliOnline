@@ -71,7 +71,12 @@
 
 					<td>${ann.getId()}</td>
 					<td>${ann.getTitolo()}</td>
-					<td>${ann.getDescrizione()}</td>
+					<td><details>
+   							 <summary>
+     						<strong>Clicca per vedere la descrizione:</strong> 
+  							  </summary>
+   						 <p> ${ann.getDescrizione()}</p>
+ 						 </details>
 					<td>${ann.getContratto()}</td>
 					<td>${ann.getPrezzo()}</td>
 					<td>${ann.getMetri()}</td>
