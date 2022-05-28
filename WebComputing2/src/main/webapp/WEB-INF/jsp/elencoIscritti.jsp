@@ -110,7 +110,7 @@
 				<option value="Admin">Admin</option>
 			</select>
 
-			<div class="btn-group" id="bottoni">
+			<div class="btn-group  flex-wrap" id="bottoni">
 				<input class="btn btn-primary" id="btnInserisci" type="button"
 					value="Inserisci Utente"> <input class="btn btn-warning"
 					id="btnModifica" type="button" value="Modifica Utente" />

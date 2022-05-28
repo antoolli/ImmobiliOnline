@@ -43,6 +43,7 @@ public class GestioneUtentiRest {
 		Database.getInstance().getAffittiDao().deleteByVenditore(username);
 		Database.getInstance().getVenditaDao().deleteByVenditore(username);
 		Database.getInstance().getAsteDao().deletebyVenditore(username);
+		Database.getInstance().getRecensioneDao().deletebyVenditore(username);
 		HttpSession session = req.getSession();
 		session.invalidate();
 		

@@ -8,7 +8,6 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<link href="css/common.css" rel="stylesheet" type="text/css"></link>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script language="javascript" src="js/infoAnnuncio.js"></script>
 			<!-- JavaScript Alertify -->
 		<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 		<!-- CSS -->
@@ -99,7 +98,7 @@
 		<h5 class="text-center">${annuncio.getTipologia()}</h5>
 
 
-		<div class="btn-group" id="groupbt">
+		<div class="btn-group  flex-wrap" id="groupbt">
 			<form method="post" action="/contattaidAffitti">
 				<input class="d-none" id="contattaci" type="radio" name="contattaci" value="${annuncio.getId()}" checked> 
 				<input id="btnContattaci" class="btn btn-primary " type="submit" value="Contattaci">
@@ -115,7 +114,7 @@
 			</form>
 			</div>
 			<c:if test="${logger.getUsername().equals(annuncio.getVenditore())}">
-			<div class="btn-group" id="groupbt">
+			<div class="btn-group flex-wrap" id="groupbt">
 				<form method="post" action="/ModificaAnnuncioAffitto">
 					<input class="d-none" id="modificaAnnuncio" type="radio" name="modificaAnnuncio" value="${annuncio.getId()}" checked>
 					<input id="btnRecensione" class="btn btn-success" type="submit" value="Modifica Annuncio">

@@ -89,7 +89,7 @@
 			<c:forEach items="${recensioni}" var="rec">
 				<tr>
 					<td><input id="${rec.getCodiceId()}" type="checkbox" /></td>
-					<td>${rec.getId()}</td>
+					<td>${rec.getIdAnnuncio()}</td>
 					<td>${rec.getVenditore()}</td>
 					<td>${rec.getRecensione()}</td>
 					<td>${rec.getValutazione()}</td>
@@ -111,7 +111,7 @@
 			<input id="CampoVenditore" type="text" placeholder="Inserisci Venditore">
 			<input id="CampoRecensione" type="text" placeholder="Inserisci Recensione">
 			<input id="CampoValutazione" type="number" placeholder="Inserisci Valutazione" min=1 max=5>
-			<div class="btn-group">
+			<div class="btn-group  flex-wrap">
 				<input class="btn btn-primary" id="btnInserisci" type="button" value="Inserisci Recensione"> 
 				<input class="btn btn-warning" id="btnModifica" type="button" value="Modifica Recensione" />
 			</div>

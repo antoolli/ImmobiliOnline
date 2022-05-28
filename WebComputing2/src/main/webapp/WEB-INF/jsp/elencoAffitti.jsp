@@ -91,24 +91,23 @@
 	<input class="btn btn-danger" id="btnCancellaAnnuncio" type="button"
 		value="Cancella Annuncio" />
 
-	<div
-		class="container mt-3 rounded mx-auto d-block border border-secondary"
-		id="log">
+	<div class="container mt-3 rounded mx-auto d-block border border-secondary">
+		
 		<strong>Modifiche admin:</strong>
-		<div class="mb-3 mt-3"id="elencoAnnuncio">
+		<div class="mb-4 mt-4" id="elenco">
 			<input id="CampoTitolo" type="text" placeholder="Inserisci Titolo">
 			<input id="CampoDescrizione" type="text" placeholder="Inserisci Descrizione"> 
 			<input id="CampoContratto" type="number" placeHolder="Inserisci mesi Contratto" min=0>
-		</div>
-		<div class="mb-3 mt-3"id="elencoAnnuncio">
 			<input id="CampoPrezzo" type="number" placeholder="Inserisci Prezzo" min=0>
+		</div>
+		<div class="mb-4 mt-4"id="elenco">
 			<input id="CampoMetri" type="number" placeholder="Inserisci Metri"min=0>
 			 <input id="Campolatitudine" type="text" placeholder="Inserisci Latitudine">
 			<input id="Campolongitudine" type="text" placeholder="Inserisci Longitudine">
 			
-				<div class="mb-2 mt-2">
+			
 				
-				 <select class="form-control  w-25" id="tipologia">
+				 <select  id="tipologia">
 				<option value="appartamenti">Appartamento</option>
 				<option value="ville">Villa</option>
 				<option value="box">Box Auto</option>
@@ -117,13 +116,12 @@
 				<option value="bilocale">Bilocale</option>
 				<option value="garage">Garage</option>
 				</select>
-				</div>
+		</div>
 		
 		
-			<div class="btn-group">
-				<input class="btn btn-primary" id="btnInserisci" type="button"
-					value="Inserisci Annuncio"> <input class="btn btn-warning"
-					id="btnModifica" type="button" value="Modifica Annuncio" />
+			<div class="btn-group  flex-wrap"  id="btnAffitti">
+				<input class="btn btn-primary" id="btnInserisci" type="button" value="Inserisci Annuncio">
+				 <input class="btn btn-warning" id="btnModifica" type="button" value="Modifica Annuncio" />
 			</div>
 
 
@@ -131,7 +129,7 @@
 
 
 
-	</div>
+
 
 
 

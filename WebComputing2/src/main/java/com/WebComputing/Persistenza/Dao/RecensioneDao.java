@@ -12,5 +12,6 @@ public interface RecensioneDao {
 	public boolean delete(int id);
 	public boolean deleteReviewer(String reviewer);
 	public boolean deleteidAnnuncio(int idAnnuncio);
+	public boolean deletebyVenditore(String venditore);
 	public int numeroRecensioni(String reviewer);
 }

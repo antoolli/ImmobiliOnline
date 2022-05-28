@@ -93,7 +93,7 @@
 			<input id="CampoVenditore" type="text" placeholder="Inserisci Venditore">
 			<input id="CampoRecensione" type="text" placeholder="Inserisci Recensione">
 			<input id="CampoValutazione" type="number" placeholder="Inserisci Valutazione" min=1 max=5>
-			<div class="btn-group">
+			<div class="btn-group  flex-wrap">
 				<input class="btn btn-primary" id="btnInserisci" type="button" value="Inserisci Recensione"> 
 				<input class="btn btn-warning" id="btnModifica" type="button" value="Modifica Recensione" />
 			</div>

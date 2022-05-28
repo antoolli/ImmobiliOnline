@@ -75,24 +75,24 @@
 
 <body>
 	<section style="background-color: #9de2ff;">
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
+  <div class="container py-5 h-100  flex-wrap">
+    <div class="row d-flex justify-content-center align-items-center h-100  flex-wrap">
       <div class="col-8">
         <div class="card" style="border-radius: 15px;">
           <div class="card-body p-5">
-            <div class="d-flex text-black">
-              <div class="flex-shrink-0">
+            <div class="d-flex text-black  flex-wrap">
+              <div class="flex-shrink-0  flex-wrap">
                 <img src="img/avatar.jpg"
                   alt="Generic placeholder image" class="img-fluid"
                   style="width: 180px; border-radius: 10px;" />
               </div>
-              <div class="flex-grow-1 ms-3">
+              <div class="flex-grow-1 ms-3  flex-wrap">
                 <h5 class="mb-1">  ${logger.getNome()} &nbsp  ${logger.getCognome()}</h5>
                 <p class="mb-2 pb-1" style="color: #2b2a2a;">
                 	Acquirente
                   
                 </p>
-                <div class="d-flex justify-content-start rounded-3 p-2 mb-2"
+                <div class="d-flex justify-content-start rounded-3 p-2 mb-2  flex-wrap"
                   style="background-color: #efefef;">
                   <div>
                     <p class="small text-muted mb-1">
@@ -119,7 +119,7 @@
                     <p class="mb-0">${numRec}</p>
                   </div>
                 </div>
-                <div class="d-flex pt-1">
+                <div class="d-flex pt-1  flex-wrap">
                   <a href="VisualizzaRecensioniAcquirente">  <button type="button" id="btnVisualizza" class="btn btn-warning">Visualizza Recensioni </button> </a>
                		<div class="dropdown">
 				 	 <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Info Aste</button>

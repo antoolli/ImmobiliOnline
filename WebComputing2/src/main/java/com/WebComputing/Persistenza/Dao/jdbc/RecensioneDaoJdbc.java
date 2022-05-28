@@ -194,4 +194,20 @@ public class RecensioneDaoJdbc implements RecensioneDao {
 		return true;
 	}
 
+	@Override
+	public boolean deletebyVenditore(String venditore) {
+		String query= "DELETE FROM recensioni WHERE  venditore=?";
+		try {
+			PreparedStatement ps = con.prepareStatement(query);
+			ps.setString(1, venditore);
+			ps.executeUpdate();			
+			} catch (SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+		
+		return true;
+	
+	}
+
 }

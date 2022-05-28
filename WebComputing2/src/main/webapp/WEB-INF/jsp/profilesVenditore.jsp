@@ -71,27 +71,27 @@
 
 <body>
 	<section style="background-color: #9de2ff;">
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
+  <div class="container py-5 h-100  flex-wrap">
+    <div class="row d-flex justify-content-center align-items-center h-100  flex-wrap">
       <div class="col-8">
         <div class="card" style="border-radius: 15px;">
           <div class="card-body p-4">
-            <div class="d-flex text-black">
-              <div class="flex-shrink-0">
+            <div class="d-flex text-black  flex-wrap">
+              <div class="flex-shrink-0  flex-wrap">
                 <img src="img/avatar.jpg"
                   alt="Generic placeholder image" class="img-fluid"
                   style="width: 180px; border-radius: 10px;" />
               </div>
-              <div class="flex-grow-1 ms-3">
+              <div class="flex-grow-1 ms-3 flex-wrap">
                 <h5 class="mb-1">  ${logger.getNome()} &nbsp  ${logger.getCognome()}</h5>
                 <p class="mb-2 pb-1" style="color: #2b2a2a;">
                 	Venditore
                   
                 </p>
-                <div class="d-flex justify-content-start rounded-3 p-2 mb-2"
+                <div class="d-flex justify-content-start rounded-3 p-2 mb-2   flex-wrap"
                   style="background-color: #efefef;">
                   <div>
-                  	<div class="d-flex justify-content-start rounded-3 p-2 mb-2"
+                  	<div class="d-flex justify-content-start rounded-3 p-2 mb-2   flex-wrap"
                   style="background-color: #efefef;">
                   <div>
                     <p class="small text-muted mb-1"> Email:  &nbsp </p>
@@ -122,11 +122,13 @@
                     <p class="mb-0">${oggA}</p>
                   </div>
                 </div>
-                <div class="d-flex pt-1">
+                <div class="d-flex pt-1  flex-wrap">
+                	<div class="btn-group  flex-wrap">
                  <a href="pageTabelleVendite" > <button type="button" class="btn btn-warning">In vendita </button></a>
                  <a href="pageTabelleAffitti" >  <button type="button" class="btn btn-primary "> In affitto</button> </a>
                  <a href="pageCreaAste">  <button type="button" class="btn btn-success "> Crea Asta</button></a>
                   <button type="button" id="cancellaUtente" class="btn btn-danger">Cancella Profilo </button>
+                	</div>
                 </div>
               </div>
             </div>

@@ -100,7 +100,7 @@
 		
 	
 
-		<div class="btn-group" id="groupbt">
+		<div class="btn-group flex-wrap" id="groupbt">
 			<form method="post" action="/contattaid">
 				<input class="d-none" id="contattaci" type="radio" name="contattaci"
 					value="${annuncio.getId()}" checked> <input
@@ -122,11 +122,13 @@
 			</div>
 			
 			<c:if test="${logger.getUsername().equals(annuncio.getVenditore())}">
-			<div class="btn-group" id="groupbt">
+			
+			<div class="btn-group flex-wrap" id="groupbt">
 				<form method="post" action="/ModificaAnnuncioVendita">
 					<input class="d-none" id="modificaAnnuncio" type="radio" name="modificaAnnuncio" value="${annuncio.getId()}" checked>
 					<input id="btnModificaAnnuncio" class="btn btn-success" type="submit" value="Modifica Annuncio">
 				</form>
+					
 				<div class="row g-3">
   					<div class="col-auto">
     					<label for="Sconto" class="visually-hidden">Sconto</label>
@@ -136,6 +138,7 @@
    							 <input id="btnSconto" class="btn btn-primary" type="button" value="Sconto">
   						</div>
 				</div>
+			
 			</div>
 			</c:if>
 			
