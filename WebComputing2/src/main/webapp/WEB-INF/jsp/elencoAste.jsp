@@ -55,6 +55,7 @@
 				<th>Ultimo Prezzo:</th>
 				<th>Acquirente:</th>
 				<th>Scadenza:</th>
+				<th>Venditore</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -68,6 +69,7 @@
 					<td>${aste.getUltimoPrezzo()}</td>
 					<td>${aste.getAcquirente()}</td>
 					<td>${aste.getScadenza()}</td>
+					<td>${aste.getVenditore()}</td>
 				</tr>
 				</c:forEach>
 		</tbody>

@@ -13,6 +13,9 @@ function addEvent(){
 				success: function(risposta) {     //se mi restituisce 200
 					alertify.set('notifier','position', 'top-center');
  					alertify.success('Cancellato con successo');
+ 					 window.setTimeout( function() {
+  		window.location.reload();
+		}, 3000);
 				},
 				error: function(xhr){
 					alert(xhr.responseJSON.message);
@@ -22,6 +25,7 @@ function addEvent(){
 			
 			alertify.success('Ok') }
                 , function(){ alertify.error('Cancel')});
+               
 		
 	});
 	

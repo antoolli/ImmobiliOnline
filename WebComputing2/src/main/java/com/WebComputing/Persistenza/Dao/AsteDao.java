@@ -11,6 +11,7 @@ public interface AsteDao {
 	public boolean delete (int id);
 	public boolean deletebyIdAnnuncio(int idAnnuncio);
 	public Asta findById(int id);
-	public boolean addOfferta(String acquirente, int idAsta, int proposta);
+	public boolean addOfferta(String acquirente, int idAsta, int proposta, String email);
 	public List<Asta> findByAcquirente(String acquirente);
+	public boolean deletebyVenditore(String venditore);
 }

@@ -36,6 +36,8 @@ public class AsteDaoJdbc implements AsteDao {
 				asta.setPrezzoBase(rs.getInt("prezzobase"));
 				asta.setUltimoPrezzo(rs.getInt("ultimoprezzo"));
 				asta.setAcquirente(rs.getString("acquirente"));
+				asta.setVenditore(rs.getString("venditore"));
+				asta.setEmail(rs.getString("email"));
 				
 				aste.add(asta);
 			}
@@ -53,13 +55,15 @@ public class AsteDaoJdbc implements AsteDao {
 		if (asta.getId()==0) {
 			try {
 				asta.setId(IdBrokerAsta.getId(conn));
-				String query= "INSERT INTO aste(id, idannuncio,titolo,scadenza,prezzobase)  VALUES(?,?,?,?,?)";
+				String query= "INSERT INTO aste(id, idannuncio,titolo,scadenza,prezzobase,venditore,email)  VALUES(?,?,?,?,?,?,?)";
 				PreparedStatement st= conn.prepareStatement(query);
 				st.setInt(1, asta.getId());
 				st.setInt(2, asta.getIdAnnuncio());
 				st.setString(3,asta.getTitolo());
 				st.setDate(4, asta.getScadenza());
 				st.setInt(5, asta.getPrezzoBase());
+				st.setString(6, asta.getVenditore());
+				st.setString(7, "vuota");
 				st.executeUpdate();
 			}catch (SQLException e) {
 				e.printStackTrace();
@@ -110,14 +114,15 @@ public class AsteDaoJdbc implements AsteDao {
 	}
 
 	@Override
-	public boolean addOfferta(String acquirente, int idAsta, int proposta) {
+	public boolean addOfferta(String acquirente, int idAsta, int proposta, String email) {
 	
-		String query= "UPDATE aste SET ultimoprezzo=?, acquirente=? where id='"+idAsta+"'";
+		String query= "UPDATE aste SET ultimoprezzo=?, acquirente=?, email=? where id='"+idAsta+"'";
 		PreparedStatement st;
 		try {
 			st = conn.prepareStatement(query);
 			st.setInt(1, proposta);
 			st.setString(2, acquirente);
+			st.setString(3, email);
 			st.executeUpdate();
 		
 		} catch (SQLException e) {
@@ -158,6 +163,8 @@ public class AsteDaoJdbc implements AsteDao {
 				asta.setPrezzoBase(rs.getInt("prezzobase"));
 				asta.setUltimoPrezzo(rs.getInt("ultimoprezzo"));
 				asta.setAcquirente(rs.getString("acquirente"));
+				asta.setVenditore(rs.getString("venditore"));
+				asta.setEmail(rs.getString("email"));
 				
 				aste.add(asta);
 			}
@@ -168,6 +175,21 @@ public class AsteDaoJdbc implements AsteDao {
 	
 		
 		return aste;
+	}
+
+	@Override
+	public boolean deletebyVenditore(String venditore) {
+		String query= "DELETE FROM aste WHERE venditore =?";
+
+		try {
+			PreparedStatement ps = conn.prepareStatement(query);
+			ps.setString(1, venditore);
+			ps.executeUpdate();			
+			} catch (SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
 	}
 
 }

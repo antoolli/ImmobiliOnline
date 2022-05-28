@@ -12,7 +12,7 @@
 		<link href="css/common.css" rel="stylesheet" type="text/css"></link>
 		<title>ImmobiliOnline</title>
 		<script language="javascript" src="js/modelloDati.js"></script>
-		<script language="javascript" src="js/gestioneElencoVendita.js"></script>
+		<script language="javascript" src="js/gestionemodificaAnnuncioVendita.js"></script>
 		<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 			<!-- JavaScript Alertify -->
 		<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>

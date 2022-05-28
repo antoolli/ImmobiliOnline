@@ -1,7 +1,7 @@
 package com.WebComputing.controller;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.web.bind.annotation.PostMapping;
@@ -28,6 +28,7 @@ public class GestioneUtentiRest {
 		Database.getInstance().getIscrittiDao().delete(username); 
 		Database.getInstance().getAffittiDao().deleteByVenditore(username);
 		Database.getInstance().getVenditaDao().deleteByVenditore(username);
+		Database.getInstance().getAsteDao().deletebyVenditore(username);
 		
 	
 		
@@ -41,6 +42,9 @@ public class GestioneUtentiRest {
 		Database.getInstance().getIscrittiDao().delete(username); 
 		Database.getInstance().getAffittiDao().deleteByVenditore(username);
 		Database.getInstance().getVenditaDao().deleteByVenditore(username);
+		Database.getInstance().getAsteDao().deletebyVenditore(username);
+		HttpSession session = req.getSession();
+		session.invalidate();
 		
 		
 		return "OK";

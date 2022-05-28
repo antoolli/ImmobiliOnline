@@ -12,6 +12,8 @@ public class Asta {
 	private int prezzoBase;
 	private int ultimoPrezzo;
 	private String acquirente;
+	private String venditore;
+	private String email;
 	
 	
 	
@@ -20,7 +22,7 @@ public class Asta {
 	}
 
 
-	public Asta(int id, int idAnnuncio,String titolo, Date scadenza, int prezzoBase, int ultimoPrezzo, String acquirente) {
+	public Asta(int id, int idAnnuncio,String titolo, Date scadenza, int prezzoBase, int ultimoPrezzo, String acquirente,String venditore,String email) {
 		super();
 		this.id = id;
 		this.idAnnuncio = idAnnuncio;
@@ -29,6 +31,8 @@ public class Asta {
 		this.prezzoBase = prezzoBase;
 		this.ultimoPrezzo = ultimoPrezzo;
 		this.acquirente = acquirente;
+		this.venditore= venditore;
+		this.email=email;
 	}
 
 
@@ -104,10 +108,29 @@ public class Asta {
 		this.scadenza = scadenza;
 	}
 
+	
+	public String getVenditore() {
+		return venditore;
+	}
+
+
+	public void setVenditore(String venditore) {
+		this.venditore = venditore;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(id, idAnnuncio, prezzoBase, scadenza, titolo, ultimoPrezzo, acquirente);
+		return Objects.hash(id, idAnnuncio, prezzoBase, scadenza, titolo, ultimoPrezzo, acquirente, venditore,email);
 	}
 
 
@@ -122,7 +145,8 @@ public class Asta {
 		Asta other = (Asta) obj;
 		return id == other.id && idAnnuncio == other.idAnnuncio && prezzoBase == other.prezzoBase
 				&& Objects.equals(scadenza, other.scadenza) && Objects.equals(titolo, other.titolo)
-				&& ultimoPrezzo == other.ultimoPrezzo && Objects.equals(acquirente, other.acquirente);
+				&& ultimoPrezzo == other.ultimoPrezzo && Objects.equals(acquirente, other.acquirente)
+				&& Objects.equals(venditore, other.venditore)&& Objects.equals(email, other.email);
 	}
 	
 

@@ -8,6 +8,7 @@ function addEvent(){
 	btnProposta.addEventListener("click",function(){
 		var proposta= document.querySelector("#propostaDiAcquisto").value;
 		var prezzoBase= document.querySelector("#prezzoBase").value;
+		console.log(prezzoBase);
 		if(proposta >= prezzoBase){
 	
 		$.ajax({

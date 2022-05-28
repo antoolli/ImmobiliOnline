@@ -109,6 +109,7 @@
 	 	 </div>
  		 	<h4 class="text-center text-primary"><strong>Ultima Offerta:</strong> </h4>
 			<h5 class="text-center" >${asta.getUltimoPrezzo()}</h5>
+			
  		 	 	
 		<div class="row">
   					<div class="">
@@ -160,8 +161,9 @@
 </html>
 
 <script>
-	var a="${asta.getScadenza()}";
+	
 	const countdown=()=>{
+		var a="${asta.getScadenza()}";
 		var dt= new Date(a);
 		const countDate= new Date(dt).getTime();
 		const now = new Date().getTime();
@@ -186,8 +188,8 @@
 		
 		if(textSecond == 0 && textminute == 0 && textHour == 0 && textDay == 0 ){
 			var idAnnuncio=	${annuncio.getId()};
-			var idAsta=${asta.getId()}
-			var toEmail="antoolli49@gmail.com";
+			var idAsta=${asta.getId()};
+			var toEmail="${asta.getEmail()}";
 			var subject="Complimenti hai vinto l'asta con id="+idAsta;
 			var body= "siamo felici di comunicalre che ha vinto l'asta vi contattere al più presto su questa email per sbrigare tutte le faccende burocratiche. Complimenti ha fatto un SUPER AFFARE";
 			
@@ -243,3 +245,5 @@
 	};
 	setInterval(countdown,1000);
 </script>
+
+
