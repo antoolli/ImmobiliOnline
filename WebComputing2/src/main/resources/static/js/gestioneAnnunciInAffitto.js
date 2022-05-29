@@ -6,6 +6,8 @@ window.addEventListener("load",function(){
 
 function addEvent(){
 	
+	
+	
 	var btnSvuota= document.querySelector("#btnSvuotatutto");
 	btnSvuota.addEventListener("click",function(){
 		var campoTitolo=document.querySelector("#titolo");
