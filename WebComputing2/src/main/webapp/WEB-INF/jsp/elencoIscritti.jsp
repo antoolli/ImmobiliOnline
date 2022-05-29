@@ -51,8 +51,7 @@
 </header>
 
 <body>
-	<table id="tabIscritti" class="table table-bordered table-striped"
-		id="contatti">
+	<table  class="table table-bordered table-striped ">
 		<thead>
 			<tr>
 				<th>Select:</th>

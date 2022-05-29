@@ -48,7 +48,7 @@
 
 </header>
 <body>
-	<table id="tabAnnunci" class="table table-bordered table-striped" id="annunci">
+	<table  class="table table-bordered table-striped table-sm" >
 		<thead>
 			<tr>
 				<th>Select:</th>

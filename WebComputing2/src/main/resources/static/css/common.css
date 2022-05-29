@@ -2,6 +2,11 @@ body {
 	background-color: lightblue;
 }
 
+#tbAnnunci{
+	text-align: center;
+	padding-left:10%;
+}
+
 #icon {
   background-color: lightblue; /* Blue background */
   border: none; /* Remove borders */
@@ -73,12 +78,7 @@ table {
 }
 
 
-#tabAnnunci {
-	text-align: center;
 
-	padding-left:15%;
-	background-color: lightblue;
-}
 
 #canvas_mappa {
 	width: 80%;

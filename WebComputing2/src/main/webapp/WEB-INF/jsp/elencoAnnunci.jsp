@@ -49,7 +49,7 @@
 </header>
 <body>
 
-	<table id="tabAnnunci" class="table table-bordered table-striped" id="annunci">
+	<table id="tbAnnunci" class="table table-bordered table-striped table-sm" >
 		<thead>
 			<tr>
 				<th>Select:</th>

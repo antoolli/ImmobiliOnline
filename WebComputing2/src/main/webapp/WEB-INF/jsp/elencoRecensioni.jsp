@@ -50,8 +50,7 @@
 </header>
 <body>
 	<h1>Elenco recensioni:</h1>
-	<table id="tabRecensioni" class="table table-bordered table-striped"
-		id="annunci">
+	<table id="tabRecensioni" class="table table-bordered table-striped">
 		<thead>
 			<tr>
 				<th>Select:</th>
