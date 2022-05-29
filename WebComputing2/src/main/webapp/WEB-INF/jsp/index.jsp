@@ -22,7 +22,6 @@
  				<div class="container-fluid">
    				 <ul class="navbar-nav">
       			<!-- Avatar -->
-      			<div class="container-fluid">
       				<li class="nav-item dropdown">
         				<a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
           				<img src="img/avatar.jpg" class="rounded-circle" height="50" alt="Avatar"  />
@@ -32,8 +31,8 @@
           					 <li> <a class="dropdown-item bg-dark text-white" href="doLogout">Logout</a></li>
         				</ul>
       				</li>
-      				</div>
-     				<li class="nav-item"> <h4 class="text-center text-warning">Benvenuto ${username}</h4></li>
+      				<li class="nav-item"> <h4 class="text-center text-warning" id="benvenuto">Benvenuto ${username}</h4></li>
+    		
     			</ul>
   				</div>
 			</nav>
@@ -53,8 +52,7 @@
 
 		<!-- Indicators/dots -->
 		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#demo" data-bs-slide-to="0"
-				class="active"></button>
+			<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
 			<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
 			<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
 		</div>
@@ -110,23 +108,23 @@
   				<path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
 				</svg>
 			</a></li>
-			<li class="nav-item"><a class="nav-link" href="pageChisiamo">Chi siamo</a></li>
-			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#"> Annunci</a>
+			<li class="nav-item"><a class="nav-link" href="pageChisiamo"><strong>Chi siamo</strong></a></li>
+			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#"><strong> Annunci </strong></a>
 				<ul class="dropdown-menu bg-dark">
 					<li><a class="dropdown-item bg-dark text-white" href="pageImmInVendita">Immobili in vendita</a></li>
 					<li><a class="dropdown-item bg-dark text-white" href="pageImmInAffitto"> Immobili in affitto</a></li>
 					<li><a class="dropdown-item bg-dark text-white" href="pageAste"> Aste Online</a></li>
 				</ul>
 			</li>
-			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#"> Inserisci</a>
+			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#"><strong> Inserisci</strong></a>
 				<ul class="dropdown-menu bg-dark">
 					<li><a class="dropdown-item bg-dark text-white" href="pageVendi">Vendi Immobile</a></li>
 					<li><a class="dropdown-item bg-dark text-white" href="pageAffitta"> Affitta Immobile</a></li>
 				</ul>
 			</li>
-			<li class="nav-item"><a class="nav-link" href="pagedoveSiamo"> Dove siamo</a></li>
-			<li class="nav-item"><a class="nav-link" href="pageContatti"> Contatti </a></li>
-			<li class="nav-item"><a class="nav-link" href="pageAdmin"> Admin </a></li>
+			<li class="nav-item"><a class="nav-link" href="pagedoveSiamo"><strong> Dove siamo </strong></a></li>
+			<li class="nav-item"><a class="nav-link" href="pageContatti"><strong> Contatti </strong> </a></li>
+			<li class="nav-item"><a class="nav-link" href="pageAdmin"><strong> Admin </strong></a></li>
 		</ul>
 	</nav>
 

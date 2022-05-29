@@ -24,7 +24,6 @@
 	<p class="text-warning text-center">
 		il miglior sito dove comprare e vendere immobili online.
 		<c:if test="${username != null}">
-			
 			<nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="profiles">
  				<div class="container-fluid">
    				 <ul class="navbar-nav">
@@ -33,40 +32,45 @@
         				<a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
           				<img src="img/avatar.jpg" class="rounded-circle" height="50" alt="Avatar"  />
       					  </a>
-        				<ul class="dropdown-menu">
-         					 <li> <a class="dropdown-item" href="pageProfiles">My profile</a></li>
-          					 <li> <a class="dropdown-item" href="doLogout">Logout</a></li>
+        				<ul class="dropdown-menu bg-dark">
+         					 <li> <a class="dropdown-item bg-dark text-white" href="pageProfiles">My profile</a></li>
+          					 <li> <a class="dropdown-item bg-dark text-white" href="doLogout">Logout</a></li>
         				</ul>
       				</li>
-     				<li class="nav-item"> <h4 class="text-center text-warning">Benvenuto ${username}</h4></li>
+      				<li class="nav-item"> <h4 class="text-center text-warning" id="benvenuto">Benvenuto ${username}</h4></li>
+    		
     			</ul>
   				</div>
 			</nav>
-			
 		</c:if>
 		<c:if test="${username == null}">
-			Se ancora non sei iscritto cosa aspetti <a href="pageIscriviti">CLICCA QUI</a>  altrimenti <a href="pageLogin">LOGIN</a>
+			Se ancora non sei iscritto cosa aspetti <a href="pageIscriviti">CLICCA
+				QUI</a>  altrimenti <a href="pageLogin">LOGIN</a>
 		</c:if>
-	</p>
+		</p>
 	<!-- PERCORSO PAGINA LOGIN -->
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark"
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark"
 		id="navbarMenu">
 		<ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" href="/"> Home</a></li>
-			<li class="nav-item"><a class="nav-link" href="pageChisiamo"> Chi siamo</a></li>
-			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#"> Annunci</a>
+			<li class="nav-item"><a class="nav-link" href="/"><strong>
+				<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+  				<path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+				</svg></strong>
+			</a></li>
+			<li class="nav-item"><a class="nav-link" href="pageChisiamo"><strong>Chi siamo</strong> </a></li>
+			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#"><strong> Annunci</strong></a>
 				<ul class="dropdown-menu bg-dark">
 					<li><a class="dropdown-item text-white bg-dark" href="pageImmInVendita">Immobiliin vendita</a></li>
 					<li><a class="dropdown-item text-white bg-dark" href="pageImmInAffitto"> Immobili in affitto</a></li>
 					<li><a class="dropdown-item bg-dark text-white" href="pageAste"> Aste Online</a></li>
 				</ul></li>
-			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#"> Inserisci</a>
+			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#"><strong> Inserisci </strong></a>
 				<ul class="dropdown-menu bg-dark">
 					<li><a class="dropdown-item text-white bg-dark" href="pageVendi">Vendi Immobile</a></li>
 					<li><a class="dropdown-item text-white bg-dark" href="pageAffitta"> Affitta Immobile</a></li>
 				</ul></li>
-			<li class="nav-item"><a class="nav-link" href="pagedoveSiamo"> Dove siamo</a></li>
-			<li class="nav-item"><a class="nav-link" href="pageContatti">Contatti</a></li>
+			<li class="nav-item"><a class="nav-link" href="pagedoveSiamo"><strong> Dove siamo</strong></a></li>
+			<li class="nav-item"><a class="nav-link" href="pageContatti"><strong>Contatti</strong></a></li>
 		</ul>
 	</nav>
 	

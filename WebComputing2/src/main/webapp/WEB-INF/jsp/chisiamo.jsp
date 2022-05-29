@@ -17,7 +17,6 @@
 	<p class="text-warning text-center">
 		il miglior sito dove comprare e vendere immobili online.
 		<c:if test="${username != null}">
-
 			<nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="profiles">
  				<div class="container-fluid">
    				 <ul class="navbar-nav">
@@ -26,12 +25,13 @@
         				<a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
           				<img src="img/avatar.jpg" class="rounded-circle" height="50" alt="Avatar"  />
       					  </a>
-        				<ul class="dropdown-menu">
-         					 <li> <a class="dropdown-item" href="pageProfiles">My profile</a></li>
-          					 <li> <a class="dropdown-item" href="doLogout">Logout</a></li>
+        				<ul class="dropdown-menu bg-dark">
+         					 <li> <a class="dropdown-item bg-dark text-white" href="pageProfiles">My profile</a></li>
+          					 <li> <a class="dropdown-item bg-dark text-white" href="doLogout">Logout</a></li>
         				</ul>
       				</li>
-     				<li class="nav-item"> <h4 class="text-center text-warning">Benvenuto ${username}</h4></li>
+      				<li class="nav-item"> <h4 class="text-center text-warning" id="benvenuto">Benvenuto ${username}</h4></li>
+    		
     			</ul>
   				</div>
 			</nav>
@@ -40,7 +40,7 @@
 			Se ancora non sei iscritto cosa aspetti <a href="pageIscriviti">CLICCA
 				QUI</a>  altrimenti <a href="pageLogin">LOGIN</a>
 		</c:if>
-	</p>
+		</p>
 	<!-- PERCORSO PAGINA LOGIN -->
 	<nav class="navbar navbar-expand-sm navbar-dark bg-dark"
 		id="navbarMenu">

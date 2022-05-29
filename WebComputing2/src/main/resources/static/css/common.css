@@ -115,11 +115,13 @@ table {
 	margin-top: 2%;
 }
 
-
+#benvenuto{
+	margin-top: 5%;
+}
 
 
 #profiles{
-	margin-left: 100px;	
+	padding-left:35%;	
 }
 
 #btnModificaAnnuncio{
