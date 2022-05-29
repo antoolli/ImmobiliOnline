@@ -50,7 +50,7 @@
 
 <body>
 	<h1  class="text-danger">Non sei autorizzato ad accedere alla pagina</h1>
-	<img id="notautorized" src="img/notautorized.jpg" class="img-fluid" >
+	<img  class="img-fluid" id="notautorized" src="img/notautorized.jpg" class="img-fluid" >
 	
 	
 	

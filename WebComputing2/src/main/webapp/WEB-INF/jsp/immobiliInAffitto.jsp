@@ -68,7 +68,9 @@
 
 
 <body>
+	
 	<div class="container mt-3 rounded mx-auto d-block border border-secondary ">
+	<h1 class="text-center">Immobili in Affitto:</h1>
 			<div class="container">
 	 <div class="row">
     	<div class="col-sm"> 
@@ -91,7 +93,7 @@
 			</div>
     </div>
     <div class="col-sm"> 
-    	  	<div class="select-wrapper">
+    	  	<div class="select-wrapper" id="ordinaper">
  				 <label for="defaultSelect"><strong>Ordina per:</strong></label>
   				
   				  <form method="post" action="/pageOrdinaA">
@@ -108,7 +110,7 @@
 </div>
 			
 
-		<h1 class="text-center">Immobili in Affitto:</h1>
+		
 		<div class="row">
 			<c:forEach items="${annunci_affitti}" var="ann">
 

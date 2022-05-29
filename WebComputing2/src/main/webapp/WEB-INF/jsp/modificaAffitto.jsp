@@ -122,19 +122,19 @@
 		class="container mt-3 rounded mx-auto d-block border border-secondary"
 		id="log">
 		<strong>Modifiche il tuo annuncio:</strong>
-		<div class="mb-3 mt-3" id="elencoAnnuncio">
+		<div class="mb-4 mt-4" id="elencoAnnuncio">
 			<input id="CampoTitolo" type="text" placeholder="Inserisci Titolo">
 			<input id="CampoDescrizione" type="text" placeholder="Inserisci Descrizione">
 			<input id="CampoContratto" type="number" placeHolder="Inserisci mesi Contratto"> 
+			<input id="CampoPrezzo" type="number" placeholder="Inserisci Prezzo" min=0>
 		</div>
 		<div class="mb-3 mt-3" id="elencoAnnuncio">	
-			<input id="CampoPrezzo" type="number" placeholder="Inserisci Prezzo" min=0>
+			
 			<input id="CampoMetri" type="number" placeholder="Inserisci Metri" min=0> 
 			<input id="Campolatitudine" type="text" placeholder="Inserisci Latitudine"> 
 			<input id="Campolongitudine" type="text" placeholder="Inserisci Longitudine"> 
 			
-			<div class="mb-3 mt-3">
-				 <select class="form-control  w-25" id="tipologia">
+				 <select class="tipologia1" id="tipologia">
 				<option value="appartamenti">Appartamento</option>
 				<option value="ville">Villa</option>
 				<option value="box">Box Auto</option>
@@ -143,7 +143,7 @@
 				<option value="bilocale">Bilocale</option>
 				<option value="garage">Garage</option>
 				</select>
-				</div>
+				
 			
 			<div class="btn-group">
 		<!--  		<input class="btn btn-primary" id="btnInserisci" type="button" value="Inserisci Annuncio">-->

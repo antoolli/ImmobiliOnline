@@ -96,7 +96,7 @@
 			</div>
     </div>
     <div class="col-sm"> 
-    	  	<div class="select-wrapper">
+    	  	<div class="select-wrapper"id="ordinaper">
  				 <label for="defaultSelect"><strong>Ordina per:</strong></label>
   				
   				  <form method="post" action="/pageOrdinaV">

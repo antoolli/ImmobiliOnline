@@ -98,17 +98,17 @@
 		</tbody>
 	</table>
 	<input class="btn btn-danger" id="btnCancellaAsta" type="button" value="Cancella Asta"/>
-	<div class="container mt-3 rounded mx-auto d-block border border-secondary" id="log">
+	<div class="container mt-3 rounded mx-auto d-block border border-secondary" >
 		<strong>Modifiche admin:</strong>
-		<div class="mb-3 mt-3" id="elencoAste">
+		<div class="mb-4 mt-4" id="modAsta">
 			<input id="CampoTitolo" type="text" placeholder="Inserisci Titolo">
 			<input id="CampoPrezzoBase" type="number" placeholder="Inserisci Prezzo Base">
 			<input id="CampoScadenza" type="date" placeholder="Inserisci data di Scadenza">
-		</div>
+		
 			<div class="btn-group">
 				<input class="btn btn-warning" id="btnModifica" type="button" value="Modifica Asta" />
 			</div>
-
+		</div>
 	</div>
 	
 	

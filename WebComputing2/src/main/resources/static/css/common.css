@@ -15,6 +15,9 @@ nav {
 	padding-left:25%;
 }
 
+#modAsta{
+	padding-left:18%;
+}
 
 
 footer {
@@ -102,16 +105,14 @@ table {
 	margin-left: 40px;
 }
 
-#CampoSesso {
-	float: left;
-}
 
-#CampoPermessi {
-	float: center;
+#campoEta,#CampoValutazione{
+	width:17%;
 }
 
 #bottoni {
 	margin-left: 70%;
+	margin-top: 2%;
 }
 
 
@@ -142,7 +143,8 @@ table {
 }
 
 #notautorized{
-	margin-left:200px;
+	padding-left:19%;
+	
 }
 
 
@@ -154,10 +156,42 @@ table {
 	display: block;
 }
 
+select.tipologia{
+	height:5%;
+	width:19%;
 
+}
+select.campoSesso,select.CampoPermessi,select.tipologia1{
+	height:5%;
+	width:17%;
+}
+#ordinaper{
+		margin-left: 45%;
+	
+	
+}
 /*
 
+input[type="date"] {
+	 
 
+     display: -webkit-inline-flex;
+     font-family: monospace;
+     overflow: hidden;
+     padding: 0;
+     -webkit-padding-start: 1px;
+
+  
+ }
+
+
+ input::-webkit-datetime-edit-fields-wrapper { background: silver; }
+ input::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+ input::-webkit-datetime-edit-month-field { color: blue; }
+ input::-webkit-datetime-edit-day-field { color: green; }
+ input::-webkit-datetime-edit-year-field { color: purple; }
+ input::-webkit-inner-spin-button { display: none; }
+ input::-webkit-calendar-picker-indicator { background: orange; }
 
 
 nav{

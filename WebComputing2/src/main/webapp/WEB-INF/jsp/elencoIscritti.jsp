@@ -90,21 +90,22 @@
 		class="container mt-3 rounded mx-auto d-block border border-secondary"
 		id="log">
 		<strong>Modifiche admin:</strong>
-		<div class="mb-3 mt-3">
+		<div class="mb-4 mt-4">
 			<input id="CampoUsername" type="text" placeholder="Inserisci Username"> 
 			<input id="CampoEmail" type="email" placeholder="Inserisci Email">
 			<input id="CampoPassword" type="password" placeholder="Inserisci Password">
 			<input id="CampoNome" type="text" placeholder="Inserisci Nome">
-			<input id="CampoCognome" type="text" placeholder="Inserisci Cognome">
-			<input id="CampoEta" type="number" placeholder="Inserisci età" min="16" max="100">
+			
 		</div>
 
-		<div class="mb-3 mt-3">
+		<div class="mb-4 mt-4">
+			<input id="CampoCognome" type="text" placeholder="Inserisci Cognome">
+			<input id="CampoEta" type="number" placeholder="Inserisci età" min="16" max="100">
 
-			<select class="form-control w-25" id="CampoSesso">
+			<select class="campoSesso" id="CampoSesso">
 				<option value="M">Maschio</option>
 				<option value="F">Femmina</option>
-			</select> <select class="form-control w-25" id="CampoPermessi">
+			</select> <select class="CampoPermessi"  id="CampoPermessi">
 				<option value="A">Acquirente</option>
 				<option value="V">Venditore</option>
 				<option value="Admin">Admin</option>

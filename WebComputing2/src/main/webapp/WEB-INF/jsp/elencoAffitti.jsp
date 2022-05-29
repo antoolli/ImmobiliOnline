@@ -107,7 +107,7 @@
 			
 			
 				
-				 <select  id="tipologia">
+				 <select class="tipologia" id="tipologia">
 				<option value="appartamenti">Appartamento</option>
 				<option value="ville">Villa</option>
 				<option value="box">Box Auto</option>

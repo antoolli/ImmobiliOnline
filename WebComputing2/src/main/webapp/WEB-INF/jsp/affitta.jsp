@@ -93,11 +93,11 @@
 			</div>
 			
 			<div class="mb-3 mt-3">
-				<label for="Contratto" class="form-label">Inserisci
-					Contratto di affitto:</label> <input type="number" class="form-control"
-					id="contratto"
-					placeholder="Inserisci per quanti mesi è disponibile"
-					name="contratto">
+				<label for="Contratto" class="form-label">Inserisci Contratto di affitto:</label> 
+				<div class="input-group mb-2">
+				<input type="number" class="form-control" id="contratto" placeholder="Inserisci per quanti mesi è disponibile" name="contratto">
+				<span class="input-group-text">mesi</span>
+				</div>
 			</div>
 			
 			<label for="Prezzo" class="form-label">Inserisci Prezzo:</label> 
