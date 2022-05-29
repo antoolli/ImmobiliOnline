@@ -112,10 +112,10 @@
 			</div>
 			
 		
-			<div class="mb-3 mt-3">
-				<label for="metri" class="form-label">Grandezza in metri
-					quadrati</label> <input type="number" class="form-control" id="metri"
-					placeholder="Grandezza in metri quadrati" name="metri">
+			<label for="metri" class="form-label">Grandezza:</label>
+			<div class="input-group mb-2">
+				<input type="number" class="form-control" id="metri" placeholder="Grandezza in metri quadrati" name="metri">
+				<span class="input-group-text">.mq</span>
 			</div>
 			<div class="mb-3 mt-3">
 				<label for="latitudine" class="form-label">Inserisci Posizione:</label>

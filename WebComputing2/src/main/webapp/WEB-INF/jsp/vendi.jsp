@@ -106,9 +106,10 @@
 				<input type="number" class="form-control" id="prezzo" placeholder="Inserisci Prezzo" name="prezzo" >
 				<span class="input-group-text">.00</span>
 			</div>
-			<div class="mb-3 mt-3">
-				<label for="metri" class="form-label">Grandezza in metri quadrati</label> 
+			<label for="metri" class="form-label">Grandezza:</label>
+			<div class="input-group mb-2">
 				<input type="number" class="form-control" id="metri" placeholder="Grandezza in metri quadrati" name="metri">
+				<span class="input-group-text">.mq</span>
 			</div>
 			<div class="mb-3 mt-3">
 				<label for="latitudine" class="form-label">Inserisci Posizione:</label> 

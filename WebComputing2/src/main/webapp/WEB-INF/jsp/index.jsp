@@ -38,8 +38,7 @@
 			</nav>
 		</c:if>
 		<c:if test="${username == null}">
-			Se ancora non sei iscritto cosa aspetti <a href="pageIscriviti">CLICCA
-				QUI</a>  altrimenti <a href="pageLogin">LOGIN</a>
+			Se ancora non sei iscritto cosa aspetti <a href="pageIscriviti">CLICCA QUI</a>  altrimenti <a href="pageLogin">LOGIN</a>
 		</c:if>
 		</p>
 	</header>
