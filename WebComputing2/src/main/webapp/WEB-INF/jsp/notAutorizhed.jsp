@@ -20,9 +20,8 @@
 
 	<h1 class="text-center text-warning">ImmobiliOnline</h1>
 	<p class="text-warning text-center">
-		il miglior sito dove comprare e vendere immobili online. Se ancora non
-		sei iscritto cosa aspetti <a href="pageIscriviti">CLICCA QUI</a>
-		altrimenti <a href="pageLogin">LOGIN</a>
+		non puoi accedere alla pagina prova ad iscriverti con un altra tipologia <a href="pageIscriviti">CLICCA QUI</a>
+		oppure  <a href="pageLogin">CAMBIA ACCOUNT</a>
 	</p>
 			<nav class="navbar navbar-expand-sm navbar-dark bg-dark"
 		id="navbarMenu">

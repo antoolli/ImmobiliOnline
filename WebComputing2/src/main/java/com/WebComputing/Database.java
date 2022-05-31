@@ -34,7 +34,7 @@ public class Database {
 		try {
 			conn=DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "antonio2000");
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			System.out.println("errore nella connessione");
 			e.printStackTrace();
 		}
 			

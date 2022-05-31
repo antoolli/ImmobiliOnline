@@ -1,6 +1,6 @@
 package com.WebComputing.modal;
 
-import java.util.Objects;
+
 
 public class Iscritti {
 	private String username;

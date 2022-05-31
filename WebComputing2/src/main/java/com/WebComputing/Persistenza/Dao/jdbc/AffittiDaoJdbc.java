@@ -11,7 +11,7 @@ import java.util.List;
 import com.WebComputing.IdBrokerVendita;
 import com.WebComputing.Persistenza.Dao.AffittiDao;
 import com.WebComputing.modal.AnnuncioInAffitto;
-import com.WebComputing.modal.annunciInVendita;
+
 
 
 public class AffittiDaoJdbc implements AffittiDao{

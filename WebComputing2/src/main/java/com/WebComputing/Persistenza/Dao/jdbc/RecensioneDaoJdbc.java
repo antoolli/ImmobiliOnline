@@ -11,7 +11,7 @@ import java.util.List;
 import com.WebComputing.IdBrokerRecensione;
 import com.WebComputing.Persistenza.Dao.RecensioneDao;
 import com.WebComputing.modal.Recensione;
-import com.WebComputing.modal.annunciInVendita;
+
 
 public class RecensioneDaoJdbc implements RecensioneDao {
 		

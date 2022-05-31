@@ -100,7 +100,7 @@
 		<small> Per maggiori informazioni sui nostri servizi
 			contattaci all'indirizzo <a href="mailto:antoolli49@gmail.com">
 				antoolli49@gmail.com</a> <br>per maggiori informazioni sui <a
-			href="terminieCondizioni.html">Termini e Condizioni </a> </br>
+			href="terminieCondizioni.html">Termini e Condizioni </a> 
 		</small>
 
 

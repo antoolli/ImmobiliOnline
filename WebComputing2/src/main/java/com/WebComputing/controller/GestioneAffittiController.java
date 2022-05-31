@@ -7,7 +7,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.springframework.beans.factory.ListableBeanFactory;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.WebComputing.Database;
 import com.WebComputing.modal.AnnuncioInAffitto;
 import com.WebComputing.modal.Iscritti;
-import com.WebComputing.modal.annunciInVendita;
+
 
 
 
@@ -140,7 +140,7 @@ public class GestioneAffittiController {
 	}
 	
 	
-	//todo Vedere perchè non ordina con grandezza Decrescente
+	
 	@PostMapping("/pageOrdinaA")
 	public String ordinaAffitti(HttpServletRequest req) {
 		if (req.getSession().getAttribute("username")!= null) {

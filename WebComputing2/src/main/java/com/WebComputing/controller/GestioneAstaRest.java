@@ -16,7 +16,6 @@ public class GestioneAstaRest {
 	@PostMapping("/addAsta")
 	public String addAsta(@RequestBody Asta asta, HttpServletRequest req) {
 		String venditore= (String) req.getSession().getAttribute("username");
-		Iscritti i= Database.getInstance().getIscrittiDao().findByUsernameiS(venditore);
 		asta.setVenditore(venditore);
 		if (Database.getInstance().getAsteDao().saveUpdate(asta)) {
 			return "ok";
@@ -35,7 +34,7 @@ public class GestioneAstaRest {
 		if (Database.getInstance().getAsteDao().addOfferta(acquirente, id, proposta,email))
 			return "ok";
 		
-		return null;
+		return "error";
 	}
 	
 	@PostMapping("/deleteAsta")
@@ -43,7 +42,7 @@ public class GestioneAstaRest {
 		if(Database.getInstance().getAsteDao().delete(id)) {
 			return"ok";
 		}
-		return null;
+		return "error";
 	}
 	
 	

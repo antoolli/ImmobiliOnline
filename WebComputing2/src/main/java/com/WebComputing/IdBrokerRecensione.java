@@ -17,7 +17,7 @@ public static int getId(Connection conn) {
 			rs.next();
 			return rs.getInt("id");
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			System.out.println("errore nell incremento id recensione");
 			e.printStackTrace();
 		}
 		return 0;

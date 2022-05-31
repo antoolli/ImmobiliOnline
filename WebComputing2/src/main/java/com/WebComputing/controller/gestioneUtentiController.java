@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import com.WebComputing.Database;
 import com.WebComputing.modal.Iscritti;
-import com.WebComputing.modal.annunciInVendita;
+
 
 
 @Controller

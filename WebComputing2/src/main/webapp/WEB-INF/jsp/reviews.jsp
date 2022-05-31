@@ -97,8 +97,9 @@
 							aria-expanded="false" aria-controls="${recensione.getCodiceId()}">
 							<strong>Valutazione di: &nbsp </strong> 
 								<div class="text-warning">${recensione.getValutazione()} stelle </div>
-							<strong>&nbsp al Venditore: &nbsp </strong>
-							<div class="text-primary">${recensione.getVenditore()}</div>
+							<strong>&nbsp da parte di: &nbsp </strong>
+							<div class="text-primary">${recensione.getReviewer()}</div>
+							
 						</button>
 					</h2>
 					<div id="collapseOne" class="accordion-collapse collapse show"

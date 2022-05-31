@@ -61,13 +61,13 @@ public class GestioneEmailRest {
 		try {
 			sendmail(email);
 		} catch (AddressException e) {
-			// TODO Auto-generated catch block
+			System.out.println("errore invio email");
 			e.printStackTrace();
 		} catch (MessagingException e) {
-			// TODO Auto-generated catch block
+			System.out.println("errore invio email");
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			System.out.println("errore invio email");
 			e.printStackTrace();
 		}
 		

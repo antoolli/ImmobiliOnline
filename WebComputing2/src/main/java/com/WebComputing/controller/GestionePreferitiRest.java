@@ -41,7 +41,7 @@ public class GestionePreferitiRest {
 		System.out.println(username);
 		System.out.print(id);
 		Database.getInstance().getPreferitiDao().delete(username, id);
-		return null;
+		return "ok";
 	}
 	
 }

@@ -8,7 +8,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.WebComputing.IdBrokerVendita;
 import com.WebComputing.Persistenza.Dao.PreferitiDao;
 import com.WebComputing.modal.Annuncio;
 import com.WebComputing.modal.Preferiti;

@@ -17,12 +17,9 @@ public class GestionePreferitiController {
 	public String pagePreferiti(HttpServletRequest req) {
 		String username= (String) req.getSession().getAttribute("username");
 		if (username != null) {
-			Iscritti us= Database.getInstance().getIscrittiDao().findByUsernameiS(username);
-			if (us.getPermessi().equals("A") || us.getPermessi().equals("Admin")) {
 				List<Preferiti> preferiti=Database.getInstance().getPreferitiDao().findByIdUsername(username);
 				req.setAttribute("preferiti", preferiti);
 				return "preferiti";
-			}
 		}
 		return  "notAutorizhed";
 	}

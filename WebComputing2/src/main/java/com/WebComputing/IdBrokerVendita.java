@@ -17,7 +17,7 @@ public class IdBrokerVendita {
 			rs.next();
 			return rs.getInt("id");
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			System.out.println("errore nell incremento id annunci");
 			e.printStackTrace();
 		}
 		return 0;
