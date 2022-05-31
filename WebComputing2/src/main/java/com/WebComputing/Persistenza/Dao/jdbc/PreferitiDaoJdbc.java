@@ -92,7 +92,7 @@ public class PreferitiDaoJdbc implements PreferitiDao {
 				preferiti.add(pr);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("duplicato non può essere aggiunto");
 		}
 		return preferiti;
 	}

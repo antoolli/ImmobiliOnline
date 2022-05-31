@@ -79,6 +79,7 @@
 </header>
 
 <body>
+<h1 class="text-danger"><strong>I tuoi Preferiti:</strong></h1>
 <table id="tbAnnunci" class="table table-bordered table-striped table-sm" >
 		<thead>
 			<tr>
@@ -123,7 +124,7 @@
 		</tbody>
 	</table>
 	<div class="btn-group flex-wrap" id="groupbtPrefe">
-		<input class="btn btn-danger" id="btnCancellaPreferiti" type="button" value="Cancella dai Preferiti" />
+		<input class="btn btn-danger" id="btnCancellaPreferiti" type="button" value="Rimuovi dai Preferiti" />
 		
 	</div>
 
