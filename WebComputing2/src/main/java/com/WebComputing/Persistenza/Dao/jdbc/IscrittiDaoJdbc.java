@@ -47,35 +47,7 @@ public class IscrittiDaoJdbc implements IscrittiDao {
 		return users;
 	}
 
-	@Override
-	public Iscritti findByPrimaryKey(String username) {
-		Iscritti iscr= null;
-		String query= "select * from users where username = ?";
-		
-		
-		try {
-			PreparedStatement st  = conn.prepareStatement(query);
-			st.setString(1, username);
-			ResultSet rs= st.executeQuery();
-			
-			while(rs.next()) {
-				iscr= new Iscritti();
-				iscr.setUsername(rs.getString(username));
-				iscr.setEmail(rs.getString("email"));
-				iscr.setPassword(rs.getString("password"));
-				iscr.setNome(rs.getString("nome"));
-				iscr.setCognome(rs.getString("cognome"));
-				iscr.setEta(rs.getInt("eta"));
-				iscr.setSesso(rs.getString("sesso"));
-				iscr.setPermessi(rs.getString("permessi"));
-			}
-			
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return iscr;
-	}
+
 
 	@Override
 	public boolean saveUpdate(Iscritti iscritto) {

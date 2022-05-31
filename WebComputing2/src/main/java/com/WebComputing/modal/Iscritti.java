@@ -11,6 +11,7 @@ public class Iscritti {
 	private int eta;
 	private String sesso;
 	private String permessi;
+
 	
 	
 	
@@ -27,6 +28,7 @@ public class Iscritti {
 		this.eta = eta;
 		this.sesso = sesso;
 		this.permessi = permessi;
+		
 	}
 	public String getUsername() {
 		return username;
@@ -79,7 +81,17 @@ public class Iscritti {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(cognome, eta, email, nome, password, permessi, sesso, username);
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((cognome == null) ? 0 : cognome.hashCode());
+		result = prime * result + ((email == null) ? 0 : email.hashCode());
+		result = prime * result + eta;
+		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
+		result = prime * result + ((password == null) ? 0 : password.hashCode());
+		result = prime * result + ((permessi == null) ? 0 : permessi.hashCode());
+		result = prime * result + ((sesso == null) ? 0 : sesso.hashCode());
+		result = prime * result + ((username == null) ? 0 : username.hashCode());
+		return result;
 	}
 
 	@Override
@@ -91,11 +103,52 @@ public class Iscritti {
 		if (getClass() != obj.getClass())
 			return false;
 		Iscritti other = (Iscritti) obj;
-		return Objects.equals(cognome, other.cognome) && Objects.equals(eta, other.eta)
-				&& Objects.equals(email, other.email) && Objects.equals(nome, other.nome)
-				&& Objects.equals(password, other.password) && Objects.equals(permessi, other.permessi)
-				&& Objects.equals(sesso, other.sesso) && Objects.equals(username, other.username);
+		if (cognome == null) {
+			if (other.cognome != null)
+				return false;
+		} else if (!cognome.equals(other.cognome))
+			return false;
+		if (email == null) {
+			if (other.email != null)
+				return false;
+		} else if (!email.equals(other.email))
+			return false;
+		if (eta != other.eta)
+			return false;
+		if (nome == null) {
+			if (other.nome != null)
+				return false;
+		} else if (!nome.equals(other.nome))
+			return false;
+		if (password == null) {
+			if (other.password != null)
+				return false;
+		} else if (!password.equals(other.password))
+			return false;
+		if (permessi == null) {
+			if (other.permessi != null)
+				return false;
+		} else if (!permessi.equals(other.permessi))
+			return false;
+		if (sesso == null) {
+			if (other.sesso != null)
+				return false;
+		} else if (!sesso.equals(other.sesso))
+			return false;
+		if (username == null) {
+			if (other.username != null)
+				return false;
+		} else if (!username.equals(other.username))
+			return false;
+		return true;
 	}
+	
+	
+
+
+
+
+
 	
 	
 	

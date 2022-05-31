@@ -7,8 +7,6 @@
 <meta charset="utf-8"></meta>
 <!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v13.0" nonce="BaDgSV5d"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link href="css/common.css" rel="stylesheet" type="text/css"></link>
 <title>ImmobiliOnline</title>
@@ -35,10 +33,6 @@
       				<li class="nav-item"> <h4 class="text-center text-warning" id="benvenuto">Benvenuto ${username}</h4></li>
     		
     			</ul>
-    			<a class="nav-link" href="pagePreferiti"><button type="button" id="Love"  class="btn btn-outline-warning" title="Visualizza elenco Preferiti" ><svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-  					<path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/> </svg>
-					Preferiti</button>
-				</a>
   				</div>
 			</nav>
 		</c:if>
@@ -48,8 +42,7 @@
 		</c:if>
 		</p>
 	<!-- PERCORSO PAGINA LOGIN -->
-	
-		<nav class="navbar navbar-expand-sm navbar-dark bg-dark"
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark"
 		id="navbarMenu">
 		<ul class="navbar-nav">
 			<li class="nav-item"><a class="nav-link" href="/"><strong>
@@ -73,40 +66,57 @@
 			<li class="nav-item"><a class="nav-link" href="pageContatti"><strong>Contatti</strong></a></li>
 		</ul>
 	</nav>
+	
 
 </header>
 
 <body>
-	<div class="container mt-3 rounded mx-auto d-block border border-secondary ">
-	
-			<h1 class="text-center">Immobili in Affitto:</h1>
-		<div class="row">
-			<c:forEach items="${annunci}" var="ann">
+<table id="tbAnnunci" class="table table-bordered table-striped table-sm" >
+		<thead>
+			<tr>
+				<th>Select</th>
+				<th>Id:</th>
+				<th>Titolo:</th>
+				<th>Descrizione:</th>
+				<th>Prezzo:</th>
+				<th>Grandezza:</th>
+				<th>Latitudine:</th>
+				<th>Longitudine:</th>
+				<th>Venditore:</th>
+				<th>Tipologia:</th>
+			</tr>
+		</thead>
+		<tbody>
 
-				<div class="col-lg-4 mt-4">
-					<div class="card" id="card">
-						<img class="card-img-top" src="img/c2.png" alt="Card image"
-							style="width: 100%">
-						<div class="card-body text-center">
-							<h4 class="card-title">${ann.getTitolo() }</h4>
-							<p class="card-text">${ann.getDescrizione()}</p>
-							<p class="card-text">Contratto:<strong> ${ann.getContratto()}</strong> </p>
-							<p class="card-text">Prezzo:<strong>${ann.getPrezzo()}€ </strong> </p>
-							<p class="card-text">Dimensioni:<strong> ${ann.getMetri()} mq</strong></p>
-							<p class="card-text">Venditore:<strong> ${ann.getVenditore()}</strong></p>
-							<p class="card-text">Tipologia:<strong> ${ann.getTipologia()}</strong></p>
-							<form method="get" action="/infoAffitti">
-								<input class="d-none" id="visualizza" type="radio" name="visualizza" value="${ann.getId()}" checked/> 
-								<input id="btnInfo" class="btn btn-primary " type="submit"value="info"/>
-							</form>
-							<div class="fb-share-button" data-href="http://localhost:8080/infoAffitti?visualizza=${ann.getId()}" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Condividi</a></div>
-						</div>
-					</div>
-				</div>
+			<c:forEach items="${preferiti}" var="ann">
+
+
+				<tr>
+					<td><input id="${ann.getId()}" type="checkbox" /></td>
+
+					<td>${ann.getId()}</td>
+					<td>${ann.getTitolo()}</td>
+					<td><details>
+   							 <summary>
+     							<strong>Clicca per vedere la descrizione:</strong> 
+  							  </summary>
+   						 <p> ${ann.getDescrizione()}</p>
+ 						 </details>
+					
+					</td>
+					<td>${ann.getPrezzo()}</td>
+					<td>${ann.getMetri()}</td>
+					<td>${ann.getLatitudine()}</td>
+					<td>${ann.getLongitudine()}</td>
+					<td>${ann.getVenditore()}</td>
+					<td>${ann.getTipologia()}</td>
 			</c:forEach>
-		</div>
-		</div>
-		<footer>
+
+		</tbody>
+	</table>
+
+
+	<footer>
 		<small> Per maggiori informazioni sui nostri servizi
 			contattaci all'indirizzo <a href="mailto:antoolli49@gmail.com">
 				antoolli49@gmail.com</a> <br>per maggiori informazioni sui <a
@@ -116,4 +126,6 @@
 
 	</footer>
 </body>
+
+
 </html>

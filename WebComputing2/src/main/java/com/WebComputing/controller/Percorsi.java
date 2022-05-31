@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import com.WebComputing.Database;
 import com.WebComputing.modal.AnnuncioInAffitto;
 import com.WebComputing.modal.Iscritti;
+import com.WebComputing.modal.Preferiti;
 import com.WebComputing.modal.Recensione;
 import com.WebComputing.modal.annunciInVendita;
 
@@ -117,6 +118,20 @@ public class Percorsi {
 	 	AnnuncioInAffitto annuncio= Database.getInstance().getAffittiDao().findById(id);
 	 	req.setAttribute("annuncio", annuncio);
 	 	return "viewMap";
+	}
+	
+	@GetMapping ("/pagePreferiti")
+	public String pagePreferiti(HttpServletRequest req) {
+		String username= (String) req.getSession().getAttribute("username");
+		if (username != null) {
+			Iscritti us= Database.getInstance().getIscrittiDao().findByUsernameiS(username);
+			if (us.getPermessi().equals("A") || us.getPermessi().equals("Admin")) {
+				List<Preferiti> preferiti=Database.getInstance().getPreferitiDao().findByIdUsername(username);
+				req.setAttribute("preferiti", preferiti);
+				return "preferiti";
+			}
+		}
+		return  "notAutorizhed";
 	}
 
 	@GetMapping("/pageProfiles")

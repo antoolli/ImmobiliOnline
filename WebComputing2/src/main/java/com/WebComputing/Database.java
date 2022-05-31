@@ -8,11 +8,13 @@ import java.sql.SQLException;
 import com.WebComputing.Persistenza.Dao.AffittiDao;
 import com.WebComputing.Persistenza.Dao.AsteDao;
 import com.WebComputing.Persistenza.Dao.IscrittiDao;
+import com.WebComputing.Persistenza.Dao.PreferitiDao;
 import com.WebComputing.Persistenza.Dao.RecensioneDao;
 import com.WebComputing.Persistenza.Dao.VenditaDao;
 import com.WebComputing.Persistenza.Dao.jdbc.AffittiDaoJdbc;
 import com.WebComputing.Persistenza.Dao.jdbc.AsteDaoJdbc;
 import com.WebComputing.Persistenza.Dao.jdbc.IscrittiDaoJdbc;
+import com.WebComputing.Persistenza.Dao.jdbc.PreferitiDaoJdbc;
 import com.WebComputing.Persistenza.Dao.jdbc.RecensioneDaoJdbc;
 import com.WebComputing.Persistenza.Dao.jdbc.VenditaDaoJdbc;
 
@@ -54,6 +56,8 @@ public class Database {
 	public AsteDao getAsteDao() {
 		return new AsteDaoJdbc(conn);
 	}
-		
+	public PreferitiDao getPreferitiDao() {
+		return new PreferitiDaoJdbc(conn);
+	}	
 }
 

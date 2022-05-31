@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.WebComputing.Database;
+import com.WebComputing.modal.Annuncio;
 import com.WebComputing.modal.annunciInVendita;
 
 
@@ -39,6 +40,17 @@ public class gestioneVenditeRest {
 		int id = Integer.parseInt(idAnnuncio);
 		Database.getInstance().getVenditaDao().applicaSconto(id, sconto);
 			 return null;
+	}
+	@PostMapping("/addPreferitiVendita")
+	public String addPreferitiVendita(HttpServletRequest req) {
+		String idAnnuncio=(String) req.getSession().getAttribute("s");
+		int id = Integer.parseInt(idAnnuncio);
+		System.out.println(id);
+		Annuncio annuncio= Database.getInstance().getVenditaDao().findById(id);
+		String username= (String) req.getSession().getAttribute("username");
+		Database.getInstance().getPreferitiDao().saveUpdate(username, annuncio);
+		
+		return "Ok";
 	}
 	
 	

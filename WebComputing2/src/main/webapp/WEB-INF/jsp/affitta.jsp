@@ -40,6 +40,7 @@
       				<li class="nav-item"> <h4 class="text-center text-warning" id="benvenuto">Benvenuto ${username}</h4></li>
     		
     			</ul>
+    			  
   				</div>
 			</nav>
 		</c:if>

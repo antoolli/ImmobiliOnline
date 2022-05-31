@@ -7,6 +7,22 @@ body {
 	padding-left:10%;
 }
 
+#Love{
+	  margin-left: 30%;
+}
+#btnLove{
+	
+	  background-color: none; /* Blue background */
+	  margin-left: 41%;
+	  margin-top: 1%;
+	  margin-bottom:1%;
+}
+#btnLove:hover{
+	 background-color: red;
+}
+#btnLove:visited{
+	 background-color: red;
+}
 #icon {
   background-color: lightblue; /* Blue background */
   border: none; /* Remove borders */
