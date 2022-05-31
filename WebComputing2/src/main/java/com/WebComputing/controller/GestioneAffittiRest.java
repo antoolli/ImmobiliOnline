@@ -24,21 +24,11 @@ public class GestioneAffittiRest {
 	@PostMapping("/deleteAffitto")
 	public String deleteAffitto(@RequestBody int id)throws Exception  {
 		if (Database.getInstance().getAffittiDao().delete(id)) {
+			Database.getInstance().getPreferitiDao().deleteId(id);
 			return "ok";
 		}
 		
 		return "errore";
-	}
-	@PostMapping("/addPreferitiAffitto")
-	public String addPreferiti(HttpServletRequest req) {
-		String idAnnuncio=(String) req.getSession().getAttribute("idAffitto");
-		int id = Integer.parseInt(idAnnuncio);
-		Annuncio annuncio= Database.getInstance().getAffittiDao().findById(id);
-		String username= (String) req.getSession().getAttribute("username");
-		Database.getInstance().getPreferitiDao().saveUpdate(username, annuncio);
-		
-		
-		return "Ok";
 	}
 	
 	@PostMapping("/applicaScontoAffitto")

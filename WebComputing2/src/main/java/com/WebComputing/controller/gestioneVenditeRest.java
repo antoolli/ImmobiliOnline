@@ -28,6 +28,7 @@ public class gestioneVenditeRest {
 	@PostMapping("/deleteVendita")
 	public String deleteVendita(@RequestBody int id)throws Exception {
 		if (Database.getInstance().getVenditaDao().delete(id)) {
+			Database.getInstance().getPreferitiDao().deleteId(id);
 			return "ok";
 		}
 		
@@ -41,17 +42,7 @@ public class gestioneVenditeRest {
 		Database.getInstance().getVenditaDao().applicaSconto(id, sconto);
 			 return null;
 	}
-	@PostMapping("/addPreferitiVendita")
-	public String addPreferitiVendita(HttpServletRequest req) {
-		String idAnnuncio=(String) req.getSession().getAttribute("s");
-		int id = Integer.parseInt(idAnnuncio);
-		System.out.println(id);
-		Annuncio annuncio= Database.getInstance().getVenditaDao().findById(id);
-		String username= (String) req.getSession().getAttribute("username");
-		Database.getInstance().getPreferitiDao().saveUpdate(username, annuncio);
-		
-		return "Ok";
-	}
+	
 	
 	
 

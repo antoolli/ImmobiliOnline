@@ -53,13 +53,14 @@ public class PreferitiDaoJdbc implements PreferitiDao {
 
 
 	@Override
-	public boolean delete(String username) {
-		String query= "DELETE FROM preferiti WHERE username =?";
+	public boolean delete(String username, int id) {
+		String query= "DELETE FROM preferiti WHERE username =? and id_annuncio=?";
 		
 		
 		try {
 			PreparedStatement ps = conn.prepareStatement(query);
 			ps.setString(1, username);
+			ps.setInt(2,id);
 			ps.executeUpdate();			
 			} catch (SQLException e) {
 			e.printStackTrace();
@@ -118,5 +119,32 @@ public class PreferitiDaoJdbc implements PreferitiDao {
 		return false;
 		}
 	return true;
+	}
+	@Override
+	public boolean deleteUsername(String username) {
+		String query= "DELETE FROM preferiti WHERE username =?";	
+		try {
+			PreparedStatement ps = conn.prepareStatement(query);
+			ps.setString(1, username);
+			ps.executeUpdate();			
+			} catch (SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+	@Override
+	public boolean deleteId(int id) {
+		String query= "DELETE FROM preferiti WHERE username =? and id_annuncio=?";
+		try {
+			PreparedStatement ps = conn.prepareStatement(query);
+			ps.setInt(1,id);
+			ps.executeUpdate();			
+			} catch (SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	
 	}
 }

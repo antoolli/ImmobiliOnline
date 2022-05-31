@@ -8,13 +8,13 @@ function addEvent(){
 	
 	var btnLove= document.querySelector("#btnLove");
 	btnLove.addEventListener("click",function(){
-		alert("ok");
 		$.ajax({
 			type: "POST",
 			url: "/addPreferitiAffitto",
 			contentType: "application/json",
 			success: function(risposta) {     //se mi restituisce 200
-				alert("aggiunto");
+				alertify.set('notifier','position', 'top-center');
+ 					alertify.success('Aggiunto');
 			 
 			},
 			error: function(xhr){

@@ -9,6 +9,14 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link href="css/common.css" rel="stylesheet" type="text/css"></link>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<!-- JavaScript Alertify -->
+		<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+		<!-- CSS -->
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+		<!-- Default theme -->
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>	
+<script language="javascript" src="js/GestionePaginaPreferiti.js"></script>
 <title>ImmobiliOnline</title>
 
 </head>
@@ -114,7 +122,10 @@
 
 		</tbody>
 	</table>
-
+	<div class="btn-group flex-wrap" id="groupbtPrefe">
+		<input class="btn btn-danger" id="btnCancellaPreferiti" type="button" value="Cancella dai Preferiti" />
+		
+	</div>
 
 	<footer>
 		<small> Per maggiori informazioni sui nostri servizi
