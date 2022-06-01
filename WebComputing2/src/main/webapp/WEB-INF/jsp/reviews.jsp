@@ -87,8 +87,8 @@
 		<div class="accordion" id="accordionExample">
 
 			<c:forEach items="${recensioni}" var="recensione">
-
-
+					
+					
 
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="headingOne">
@@ -118,11 +118,17 @@
 
 
 
-
-		<h1 >Scrivi la tua recensione sull'immobile:</h1>
+	<h1 class="text-primary">Scrivi la tua recensione sull'immobile:</h1>
 		<form>
 			<label for="customRange2" class="form-label">Dai un voto da 0 a 5</label> 
-			<input type="range" class="form-range" min="0" max="5" id="range">
+				<div class="container">
+					  <div class="row">
+					    <div class="col-sm "><span class="input-group-text bg-danger"><strong class="text-white text-center">min</strong></span></div>
+					    <div class="col-10"> <input type="range" class="form-range" min="0" max="5" id="range"> </div>
+					    <div class="col-sm"><span class="input-group-text bg-success"><strong class="text-white text-center">max</strong></span></div>
+					  </div>
+				</div>
+		
 			<div class="form-group">
 				<label for="comment">Comment:</label>
 				<textarea class="form-control" rows="5" id="recensione"></textarea>

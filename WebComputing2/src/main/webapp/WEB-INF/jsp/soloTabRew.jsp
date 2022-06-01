@@ -81,8 +81,9 @@
 </header>
 
 <body>
-	<h1>Recensioni Clienti:</h1>
-	<div class="container mt-3 rounded mx-auto d-block border border-secondary bg-light">
+		<h1>Recensioni Clienti:</h1>
+	<div
+		class="container mt-3 rounded mx-auto d-block border border-secondary bg-light">
 		<div class="accordion" id="accordionExample">
 
 			<c:forEach items="${recensioni}" var="recensione">
@@ -94,9 +95,11 @@
 						<button class="accordion-button collapsed" type="button"
 							data-bs-toggle="collapse" data-bs-target="#collapseOne"
 							aria-expanded="false" aria-controls="${recensione.getCodiceId()}">
-							<strong>Valutazione di: </strong> ${recensione.getValutazione()}
-							stelle <strong> al Venditore:</strong>
-							${recensione.getVenditore()}
+							<strong>Valutazione di: &nbsp </strong> 
+								<div class="text-warning">${recensione.getValutazione()} stelle </div>
+							<strong>&nbsp da parte di: &nbsp </strong>
+							<div class="text-primary">${recensione.getReviewer()}</div>
+							
 						</button>
 					</h2>
 					<div id="collapseOne" class="accordion-collapse collapse show"
@@ -106,9 +109,12 @@
 					</div>
 				</div>
 			</c:forEach>
+
+		</div>
+	</div>
+
+
 	
-		</div>
-		</div>
 	<footer>
 		<small> Per maggiori informazioni sui nostri servizi
 			contattaci all'indirizzo <a href="mailto:antoolli49@gmail.com">

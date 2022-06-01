@@ -69,7 +69,15 @@ public class GestioneRecensioniController {
 						req.setAttribute("recensioni", recensioni);
 						req.setAttribute("annuncio", annuncio);
 						return "reviews";
-				}else return "soloTabRew";
+				}else { 
+					String s =  req.getParameter("visualizzaRecensione");
+					int id = Integer.parseInt(s);
+					annunciInVendita annuncio= Database.getInstance().getVenditaDao().findById(id);
+					List<Recensione>recensioni= Database.getInstance().getRecensioneDao().findbyIdAnnuncio(id);
+					req.setAttribute("recensioni", recensioni);
+					req.setAttribute("annuncio", annuncio);
+					
+					return "soloTabRew";}
 		}
 		return "notAutorizhed";
 	}
@@ -88,8 +96,18 @@ public class GestioneRecensioniController {
 					req.setAttribute("recensioni", recensioni);
 					req.setAttribute("annuncio", annuncio);
 					return "reviews";
+				}else { 
+					
+					String s =  req.getParameter("visualizzaRecensione");
+					int id = Integer.parseInt(s);
+					AnnuncioInAffitto annuncio= Database.getInstance().getAffittiDao().findById(id);
+					List<Recensione>recensioni= Database.getInstance().getRecensioneDao().findbyIdAnnuncio(id);
+					req.setAttribute("recensioni", recensioni);
+					req.setAttribute("annuncio", annuncio);
+					return "soloTabRew";
+					}
 				}
-		}
+		
 		
 		return "notAutorizhed";
 	}

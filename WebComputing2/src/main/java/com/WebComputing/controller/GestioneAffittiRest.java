@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.WebComputing.Database;
-import com.WebComputing.modal.Annuncio;
+
 import com.WebComputing.modal.AnnuncioInAffitto;
 
 @RestController

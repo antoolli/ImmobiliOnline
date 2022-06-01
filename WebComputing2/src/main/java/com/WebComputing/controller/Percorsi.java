@@ -89,14 +89,22 @@ public class Percorsi {
 	
 	@PostMapping("/contattaidAffitti")
 	public String contattaidAffitti(HttpServletRequest req) {
-		String s =  req.getParameter("contattaci");
-		int id = Integer.parseInt(s);
-		AnnuncioInAffitto annuncio= Database.getInstance().getAffittiDao().findById(id);
-		String username= annuncio.getVenditore();
-		Iscritti venditore=Database.getInstance().getIscrittiDao().findByUsernameiS(username);
-		req.setAttribute("annuncio", annuncio);
-		req.setAttribute("venditore", venditore);
-		return "contattaVenditore";
+		if(req.getSession().getAttribute("username ")!= null) {	
+				String l=(String) req.getSession().getAttribute("username");
+				Iscritti logger= Database.getInstance().getIscrittiDao().findByUsernameiS(l);
+				if(logger.getPermessi().equals("A") || logger.getPermessi().equals("Admin")) {
+					
+					String s =  req.getParameter("contattaci");
+					int id = Integer.parseInt(s);
+					AnnuncioInAffitto annuncio= Database.getInstance().getAffittiDao().findById(id);
+					String username= annuncio.getVenditore();
+					Iscritti venditore=Database.getInstance().getIscrittiDao().findByUsernameiS(username);
+					req.setAttribute("annuncio", annuncio);
+					req.setAttribute("venditore", venditore);
+					return "contattaVenditore";
+				}
+		}
+		return "notAutorizhed";
 	}
 	
 	

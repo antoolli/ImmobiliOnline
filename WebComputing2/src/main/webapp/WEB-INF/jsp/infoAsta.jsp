@@ -86,7 +86,7 @@
 	<!--  <div class="container-fluid bg-light">-->
 	<div class="container mt-3 rounded mx-auto d-block border border-secondary bg-light">
 		<h1 id="tit" title="${asta.getId()}" class="text-center">Codice Asta: ${asta.getId() }</h1>
-		<img src="img/c2.png" class="img-thumbnail mx-auto d-block" />
+		<img src="img/vendesi1.jpg" class=" mx-auto d-block"  id="yourImgTagVendita" />
 		<h4 class="text-center text-primary"><strong>Titolo:</strong></h4>
 		<h5 class="text-center">${annuncio.getTitolo()}</h5>
 		<h4 class="text-center text-primary"><strong>Descrizione:</strong></h4>

@@ -85,7 +85,7 @@
 				
 				<div class="col-lg-4 mt-4">
 					<div class="card" id="card" name="${ann.getId() }">
-						<img class="card-img-top" src="img/c2.png" alt="Card image"
+						<img class="card-img-top" src="img/aste.jpg" alt="Card image"
 							style="width: 100%">
 						<div class="card-body text-center">
 							<h4 class="card-title">Id Annuncio</h4>

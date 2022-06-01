@@ -7,6 +7,15 @@ body {
 	padding-left:10%;
 }
 
+#yourImgTag{
+	width: 60%;
+	height:50%;
+}
+#yourImgTagVendita{
+	width: 60%;
+	height:60%;
+}
+
 #Love{
 	  margin-left: 30%;
 }

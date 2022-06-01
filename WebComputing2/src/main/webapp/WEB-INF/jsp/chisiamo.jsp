@@ -92,33 +92,7 @@
 			proseguito gli studi iscrivendomi alla facoltà  di Informatica presso
 			l' università  delle Calabria.
 		</p>
-		<p>
-			<strong>La mia famiglia</strong> <br> Pur nativo di Cutro,
-			città  cui sono molto legato, le mie origini familiari sono
-			Calabresi. Mio nonno Antonio, di cui porto il nome, era nato,
-			infetti, nella città  di Cutro. <br> Mio padre Vincenzo è un
-			libero professionista e mia madre unâ' insegnante. <br> Ho una
-			sorella, Nuccia, studentessa anch'essa Laureata in Informatica, con
-			la quale collaboro professionalmente. <br> Mio nonno,
-			giovanissimo, si impiegò presso l'Associazione degli Industriali
-			della provincia di Crotone dove prestò ininterrotto servizio per
-			quasi 50 anni, fino agli anni 70. L'ho perso, purtroppo, quando avevo
-			solo tre anni e mio padre Vincenzo me lo ricorda come una onesta
-			persona, dedita esclusivamente alla famiglia ed al lavoro. Conservo
-			gelosamente i riconoscimenti assegnatigli dalla Confederazione
-			Generale dellâindustria Italiana, dalla Camera di Commercio di
-			Crotone e le onorificenze di Cavaliere del lavoro ed Ufficiale
-			conferitegli dal Presidente della Repubblica. Da mio padre, dottore
-			magistrale in filosofia e lettere, laureato in Economia e commercio,
-			ho ricevuto fondamentali insegnamenti oltrechÃ© in ambito economico e
-			giuridico anche in quello deontologico; detti insegnamenti,
-			unitamente alle conoscenze acquisite nel corso degli studi, mi sono
-			di indispensabile aiuto nellâaffrontare con appropriata
-			professionalità  le problematiche del campo immobiliare. Dal fratello
-			di mio padre, lo zio Giuseppe, ingegnere meccanico, consulente di
-			direzione e di organizzazione aziendale, ho ricevuto, inoltre,
-			utilissimi consigli in materia di gestione delle imprese.
-		</p>
+		
 		<p>
 			<strong>Perchè ho deciso di operare nel campo immobiliare</strong> <br>
 			Conseguita la laurea, ben presto ho avuto modo di convincermi che la
