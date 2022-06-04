@@ -39,28 +39,7 @@ public class Percorsi {
 		
 	}
 	
-	
-	
-	
-	
-	@GetMapping ("/pageAffitti")
-	public String pageAffitti (HttpServletRequest req) {
-		if (req.getSession().getAttribute("username")!= null) {
-			List<Iscritti>users=  Database.getInstance().getIscrittiDao().findAll();
-			req.setAttribute("users", users);
-			
-			return "affitti";
-		}else {
-			return "notAutorizhed";
-		}
-		
-	}
-	
 
-	
-
-	
-	
 	
 	@GetMapping ("/pageIscriviti")
 	public String pageIscriviti () {

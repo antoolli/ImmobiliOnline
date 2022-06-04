@@ -80,7 +80,7 @@
      						<strong>Clicca per vedere la descrizione:</strong> 
   							  </summary>
    						 <p> ${ann.getDescrizione()}</p>
- 						 </details>
+ 						 </details></td>
 					<td>${ann.getContratto()}</td>
 					<td>${ann.getPrezzo()}</td>
 					<td>${ann.getMetri()}</td>

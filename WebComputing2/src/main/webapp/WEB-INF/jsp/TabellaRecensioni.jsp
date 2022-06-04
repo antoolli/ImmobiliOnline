@@ -102,7 +102,14 @@
 					<td><input id="${rec.getCodiceId()}" type="checkbox" /></td>
 					<td>${rec.getIdAnnuncio()}</td>
 					<td>${rec.getVenditore()}</td>
-					<td>${rec.getRecensione()}</td>
+					<td><details>
+   							 <summary>
+     						<strong>Clicca per vedere la Recensione:</strong> 
+  							  </summary>
+   						 <p>${rec.getRecensione()}</p>
+ 						 </details>
+					
+					</td>
 					<td>${rec.getValutazione()}</td>
 					<td>${rec.getReviewer()}</td>
 					<td>${rec.getCodiceId()}</td>
