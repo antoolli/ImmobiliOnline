@@ -96,7 +96,7 @@
 		<h4 class="text-center text-primary"><strong>Venditore:</strong> </h4>
 		<h5 class="text-center">${annuncio.getVenditore()}</h5>
 		<h4 class="text-center text-primary"><strong>Prezzo base:</strong> </h4>
-		<h5 class="text-center">${asta.getPrezzoBase()}</h5>
+		<h5 class="text-center">${asta.getPrezzoBase()} €</h5>
 		<h4 class="text-center text-danger"><strong>Tempo Rimasto:</strong> </h4>
   		<div class="row border border-secondary" id="rigaTimer">
    				 <div class="col  text-danger"id="timer">
@@ -117,7 +117,7 @@
     		</div>
 	 	 </div>
  		 	<h4 class="text-center text-primary"><strong>Ultima Offerta:</strong> </h4>
-			<h5 class="text-center" >${asta.getUltimoPrezzo()}</h5>
+			<h5 class="text-center" >${asta.getUltimoPrezzo()} € </h5>
 			
  		 	 	
 		<div class="row">
