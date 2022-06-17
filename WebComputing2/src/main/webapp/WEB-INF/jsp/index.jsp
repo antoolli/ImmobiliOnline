@@ -65,7 +65,7 @@
 				<img src="img/carosel1.jpg"
 					class="img-fluid img-thumbnail rounded mx-auto d-block">
 				<div class="carousel-caption">
-					<h3>I Nostri Agenti</h3>
+					<h3>I nostri agenti</h3>
 					<p>I nostri agenti sono sempre disponibile per un sopralluogo 7
 						giorni su 7</p>
 				</div>
@@ -111,14 +111,14 @@
 				</svg>
 			</a></li>
 			<li class="nav-item"><a class="nav-link" href="pageChisiamo"><strong>Chi siamo</strong></a></li>
-			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#"><strong> Annunci </strong></a>
+			<li class="nav-item dropup"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  href="#"><strong> Annunci </strong></a>
 				<ul class="dropdown-menu bg-dark">
 					<li><a class="dropdown-item bg-dark text-white" href="pageImmInVendita">Immobili in vendita</a></li>
 					<li><a class="dropdown-item bg-dark text-white" href="pageImmInAffitto"> Immobili in affitto</a></li>
 					<li><a class="dropdown-item bg-dark text-white" href="pageAste"> Aste Online</a></li>
 				</ul>
 			</li>
-			<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#"><strong> Inserisci</strong></a>
+			<li class="nav-item dropup"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#"><strong> Inserisci</strong></a>
 				<ul class="dropdown-menu bg-dark">
 					<li><a class="dropdown-item bg-dark text-white" href="pageVendi">Vendi Immobile</a></li>
 					<li><a class="dropdown-item bg-dark text-white" href="pageAffitta"> Affitta Immobile</a></li>
